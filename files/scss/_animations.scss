@@ -1,0 +1,25 @@
+@keyframes preloading-dot-animation {
+    0% {
+        background-color: $color-preloading-dot-normal;
+    }
+
+    50% {
+        background-color: $color-preloading-dot-active;
+    }
+
+    100% {
+        background-color: $color-preloading-dot-normal;
+    }
+}
+
+@keyframes header-fly-in {
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fade-in-view {
+    100% {
+        opacity: 1;
+    }
+}

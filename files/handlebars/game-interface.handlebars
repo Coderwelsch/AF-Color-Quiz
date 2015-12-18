@@ -1,0 +1,56 @@
+<div class="game-interface view">
+    <div class="game-over-view">
+        <div class="wrapper">
+            <h1>Spiel vorbei!</h1>
+            <p class="content"></p>
+            <div class="btn reload"></div>
+        </div>
+    </div>
+
+    <div class="header-view">
+        <div class="logo">
+            <div>C</div>
+            <div>Q</div>
+        </div>
+
+        <div class="buttons">
+            <div class="btn play"></div>
+            <div class="btn reload"></div>
+        </div>
+    </div>
+
+    <div class="body-view">
+        <div class="main-view">
+            <div class="game-board">
+                <div class="wrapper">
+                    <div class="time-board">
+                        <span class="seconds">60</span>
+                        <span class="suffix"> Sek.</span>
+                    </div>
+
+                    <div class="score-bard">
+                        <div class="value">0000</div>
+                        <div class="label">Punkte</div>
+                    </div>
+                </div>
+            </div>
+            <div class="big-tiles-container tiles-container">
+                <div class="tile first-color" {{#if first-color}}style="background: #{{first-color}};" data-accepts-value="{{first-color}}"{{/if}}>
+                    <div class="label"></div>
+                </div>
+
+                <div class="tile second-color" {{#if second-color}}style="background: #{{second-color}};" data-accepts-value="{{second-color}}"{{/if}}>
+                    <div class="label"></div>
+                </div>
+            </div>
+
+            <div class="choose-view">
+
+            </div>
+        </div>
+
+        <div class="tiles-view">
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,634 @@
+[
+	{
+		"name": "Schwarz",
+		"hex": "000000"
+	},
+	{
+		"name": "Grau",
+		"hex": "808080"
+	},
+	{
+		"name": "Silber",
+		"hex": "C0C0C0"
+	},
+	{
+		"name": "Weiß",
+		"hex": "FFFFFF"
+	},
+	{
+		"name": "Marinenblau",
+		"hex": "000080"
+	},
+	{
+		"name": "Blau",
+		"hex": "0000FF"
+	},
+	{
+		"name": "Krickentengrün",
+		"hex": "008080"
+	},
+	{
+		"name": "Türkis",
+		"hex": "00FFFF"
+	},
+	{
+		"name": "Grün",
+		"hex": "008000"
+	},
+	{
+		"name": "Limone",
+		"hex": "00FF00"
+	},
+	{
+		"name": "Kastanie",
+		"hex": "800000"
+	},
+	{
+		"name": "Rot",
+		"hex": "FF0000"
+	},
+	{
+		"name": "Violett",
+		"hex": "800080"
+	},
+	{
+		"name": "Fuchsia",
+		"hex": "FF00FF"
+	},
+	{
+		"name": "Olivgrün",
+		"hex": "808000"
+	},
+	{
+		"name": "Gelb",
+		"hex": "FFFF0"
+	},
+	{
+		"name": "Eisfarben",
+		"hex": "F0F8F"
+	},
+	{
+		"name": "Antikweiß",
+		"hex": "FAEBD7"
+	},
+	{
+		"name": "Wasser",
+		"hex": "00FFFF"
+	},
+	{
+		"name": "Aquamarinblau",
+		"hex": "7FFFD4"
+	},
+	{
+		"name": "Himmelblau",
+		"hex": "F0FFFF"
+	},
+	{
+		"name": "Beige",
+		"hex": "F5F5DC"
+	},
+	{
+		"name": "Biskuit",
+		"hex": "FFE4C4"
+	},
+	{
+		"name": "Schwarz",
+		"hex": "000000"
+	},
+	{
+		"name": "Mandelweiß",
+		"hex": "FFEBCD"
+	},
+	{
+		"name": "Blau",
+		"hex": "0000FF"
+	},
+	{
+		"name": "Blauviolett",
+		"hex": "8A2BE2"
+	},
+	{
+		"name": "Braun",
+		"hex": "A52A2A"
+	},
+	{
+		"name": "Gelbbraun",
+		"hex": "DEB887"
+	},
+	{
+		"name": "Kadettenblau",
+		"hex": "5F9EA0"
+	},
+	{
+		"name": "Hellgrün",
+		"hex": "7FFF00"
+	},
+	{
+		"name": "Schokolade",
+		"hex": "D2691E"
+	},
+	{
+		"name": "Koralle",
+		"hex": "FF7F50"
+	},
+	{
+		"name": "Kornblumenblau",
+		"hex": "6495ED"
+	},
+	{
+		"name": "Mais",
+		"hex": "FFF8DC"
+	},
+	{
+		"name": "Karmesinrot",
+		"hex": "DC143C"
+	},
+	{
+		"name": "Türkis",
+		"hex": "00FFFF"
+	},
+	{
+		"name": "Dunkelblau",
+		"hex": "00008B"
+	},
+	{
+		"name": "Dunkeltürkis",
+		"hex": "008B8B"
+	},
+	{
+		"name": "Dunkle Goldrutenfarbe",
+		"hex": "B8860B"
+	},
+	{
+		"name": "Dunkelgrün",
+		"hex": "006400"
+	},
+	{
+		"name": "Dunkelgrau",
+		"hex": "A9A9A9"
+	},
+	{
+		"name": "Dunkelkhaki",
+		"hex": "BDB76B"
+	},
+	{
+		"name": "Dunkelmagenta",
+		"hex": "8B008B"
+	},
+	{
+		"name": "Dunkles Olivgrün",
+		"hex": "556B2F"
+	},
+	{
+		"name": "Dunkles Orange",
+		"hex": "FF8C00"
+	},
+	{
+		"name": "Dunkle Orchidee",
+		"hex": "9932CC"
+	},
+	{
+		"name": "Dunkelrot",
+		"hex": "8B0000"
+	},
+	{
+		"name": "Dunkle Lachsfarbe",
+		"hex": "E9967A"
+	},
+	{
+		"name": "Dunkles Seegrün",
+		"hex": "8FBC8F"
+	},
+	{
+		"name": "Dunkles Schieferblau",
+		"hex": "483D8B"
+	},
+	{
+		"name": "Dunkles Schiefergrau",
+		"hex": "2F4F4F"
+	},
+	{
+		"name": "Dunkeltürkis",
+		"hex": "00CED1"
+	},
+	{
+		"name": "Dunkelvilolett",
+		"hex": "9400D3"
+	},
+	{
+		"name": "Tiefrosa",
+		"hex": "FF1493"
+	},
+	{
+		"name": "Tiefes Himmelblau",
+		"hex": "00BFFF"
+	},
+	{
+		"name": "Dunkelgrau",
+		"hex": "696969"
+	},
+	{
+		"name": "Persenningblau",
+		"hex": "1E90FF"
+	},
+	{
+		"name": "Backstein",
+		"hex": "B22222"
+	},
+	{
+		"name": "Blütenweiß",
+		"hex": "FFFAF0"
+	},
+	{
+		"name": "Waldgrün",
+		"hex": "228B22"
+	},
+	{
+		"name": "Fuchsia",
+		"hex": "FF00FF"
+	},
+	{
+		"name": "Gainsboro",
+		"hex": "DCDCDC"
+	},
+	{
+		"name": "Geisterweiß",
+		"hex": "F8F8FF"
+	},
+	{
+		"name": "Gold",
+		"hex": "FFD700"
+	},
+	{
+		"name": "Goldrute",
+		"hex": "DAA520"
+	},
+	{
+		"name": "Grau",
+		"hex": "808080"
+	},
+	{
+		"name": "Grün",
+		"hex": "008000"
+	},
+	{
+		"name": "Grüngelb",
+		"hex": "ADFF2F"
+	},
+	{
+		"name": "Grau",
+		"hex": "808080"
+	},
+	{
+		"name": "Honigmelone",
+		"hex": "F0FFF0"
+	},
+	{
+		"name": "Leuchtendes Rosa",
+		"hex": "FF69B4"
+	},
+	{
+		"name": "Indischrot",
+		"hex": "CD5C5C"
+	},
+	{
+		"name": "Indigo",
+		"hex": "4B0082"
+	},
+	{
+		"name": "Elfenbein",
+		"hex": "FFFFF0"
+	},
+	{
+		"name": "Staubfarben",
+		"hex": "F0E68C"
+	},
+	{
+		"name": "Lavendel",
+		"hex": "E6E6FA"
+	},
+	{
+		"name": "Lavendelrosa",
+		"hex": "FFF0F5"
+	},
+	{
+		"name": "Rasengrün",
+		"hex": "7CFC00"
+	},
+	{
+		"name": "Chiffongelb",
+		"hex": "FFFACD"
+	},
+	{
+		"name": "Hellblau",
+		"hex": "ADD8E6"
+	},
+	{
+		"name": "Helles Korallenrot",
+		"hex": "F08080"
+	},
+	{
+		"name": "Helles Cyan",
+		"hex": "E0FFFF"
+	},
+	{
+		"name": "Helles Goldrutengelb",
+		"hex": "FAFAD2"
+	},
+	{
+		"name": "Hellgrau",
+		"hex": "D3D3D3"
+	},
+	{
+		"name": "Hellgrün",
+		"hex": "90EE90"
+	},
+	{
+		"name": "Hellgrau",
+		"hex": "D3D3D3"
+	},
+	{
+		"name": "Hellrosa",
+		"hex": "FFB6C1"
+	},
+	{
+		"name": "Helle Lachsfarbe",
+		"hex": "FFA07A"
+	},
+	{
+		"name": "Helles Seegrün",
+		"hex": "20B2AA"
+	},
+	{
+		"name": "Helles Himmelblau",
+		"hex": "87CEFA"
+	},
+	{
+		"name": "Helles Schiefergrau",
+		"hex": "778899"
+	},
+	{
+		"name": "Helles Stahlblau",
+		"hex": "B0C4DE"
+	},
+	{
+		"name": "Hellgelb",
+		"hex": "FFFFE0"
+	},
+	{
+		"name": "Limone",
+		"hex": "00FF00"
+	},
+	{
+		"name": "Limonengrün",
+		"hex": "32CD32"
+	},
+	{
+		"name": "Leinen",
+		"hex": "FAF0E6"
+	},
+	{
+		"name": "Magenta",
+		"hex": "FF00FF"
+	},
+	{
+		"name": "Kastanie",
+		"hex": "800000"
+	},
+	{
+		"name": "Mittleres Aquamarin",
+		"hex": "66CDAA"
+	},
+	{
+		"name": "Mittleres Blau",
+		"hex": "0000CD"
+	},
+	{
+		"name": "Mittlere Orchidee",
+		"hex": "BA55D3"
+	},
+	{
+		"name": "Mittleres Violett",
+		"hex": "9370DB"
+	},
+	{
+		"name": "Mittleres Seegrün",
+		"hex": "3CB371"
+	},
+	{
+		"name": "Mittleres Schieferblau",
+		"hex": "7B68EE"
+	},
+	{
+		"name": "Mittleres Frühlingsgrün",
+		"hex": "00FA9A"
+	},
+	{
+		"name": "Mittlere Türkis",
+		"hex": "48D1CC"
+	},
+	{
+		"name": "Mittleres Violettrot",
+		"hex": "C71585"
+	},
+	{
+		"name": "Mitternachtsblau",
+		"hex": "191970"
+	},
+	{
+		"name": "Cremige Minze",
+		"hex": "F5FFFA"
+	},
+	{
+		"name": "Altrosa",
+		"hex": "FFE4E1"
+	},
+	{
+		"name": "Mokassin",
+		"hex": "FFE4B5"
+	},
+	{
+		"name": "Navajoweiß",
+		"hex": "FFDEAD"
+	},
+	{
+		"name": "Marinenblau",
+		"hex": "000080"
+	},
+	{
+		"name": "Alte Spitze",
+		"hex": "FDF5E6"
+	},
+	{
+		"name": "Olivgrün",
+		"hex": "808000"
+	},
+	{
+		"name": "Olivgraubraun",
+		"hex": "6B8E23"
+	},
+	{
+		"name": "Orange",
+		"hex": "FFA500"
+	},
+	{
+		"name": "Orangerot",
+		"hex": "FF4500"
+	},
+	{
+		"name": "Orchidee",
+		"hex": "DA70D6"
+	},
+	{
+		"name": "Blasse Goldrutenfarbe",
+		"hex": "EEE8AA"
+	},
+	{
+		"name": "Blassgrün",
+		"hex": "98FB98"
+	},
+	{
+		"name": "Blasstürkis",
+		"hex": "AFEEEE"
+	},
+	{
+		"name": "Blasses Violettrot",
+		"hex": "DB7093"
+	},
+	{
+		"name": "Papayacreme",
+		"hex": "FFEFD5"
+	},
+	{
+		"name": "Pfirsich",
+		"hex": "FFDAB9"
+	},
+	{
+		"name": "Peru",
+		"hex": "CD853F"
+	},
+	{
+		"name": "Rosa",
+		"hex": "FFC0CB"
+	},
+	{
+		"name": "Pflaume",
+		"hex": "DDA0DD"
+	},
+	{
+		"name": "Taubenblau",
+		"hex": "B0E0E6"
+	},
+	{
+		"name": "Violett",
+		"hex": "800080"
+	},
+	{
+		"name": "Rot",
+		"hex": "FF0000"
+	},
+	{
+		"name": "Rosiges Braun",
+		"hex": "BC8F8F"
+	},
+	{
+		"name": "Königsblau",
+		"hex": "4169E1"
+	},
+	{
+		"name": "Sattelbraun",
+		"hex": "8B4513"
+	},
+	{
+		"name": "Lachsfarben",
+		"hex": "FA8072"
+	},
+	{
+		"name": "Sandbraun",
+		"hex": "F4A460"
+	},
+	{
+		"name": "Seegrün",
+		"hex": "2E8B57"
+	},
+	{
+		"name": "Muschel",
+		"hex": "FFF5EE"
+	},
+	{
+		"name": "Siennaerde",
+		"hex": "A0522D"
+	},
+	{
+		"name": "Silber",
+		"hex": "C0C0C0"
+	},
+	{
+		"name": "Himmelblau",
+		"hex": "87CEEB"
+	},
+	{
+		"name": "Schieferblau",
+		"hex": "6A5ACD"
+	},
+	{
+		"name": "Schiefergrau",
+		"hex": "708090"
+	},
+	{
+		"name": "Schneeweiß",
+		"hex": "FFFAFA"
+	},
+	{
+		"name": "Frühlingsgrün",
+		"hex": "00FF7F"
+	},
+	{
+		"name": "Stahlblau",
+		"hex": "4682B4"
+	},
+	{
+		"name": "Hautfarben",
+		"hex": "D2B48C"
+	},
+	{
+		"name": "Krickentengrün",
+		"hex": "008080"
+	},
+	{
+		"name": "Distel",
+		"hex": "D8BFD8"
+	},
+	{
+		"name": "Tomate",
+		"hex": "FF6347"
+	},
+	{
+		"name": "Türkis",
+		"hex": "40E0D0"
+	},
+	{
+		"name": "Veilchen",
+		"hex": "EE82EE"
+	},
+	{
+		"name": "Weizen",
+		"hex": "F5DEB3"
+	},
+	{
+		"name": "Weiß",
+		"hex": "FFFFFF"
+	},
+	{
+		"name": "Rauchfarben",
+		"hex": "F5F5F5"
+	},
+	{
+		"name": "Gelb",
+		"hex": "FFFF00"
+	},
+	{
+		"name": "Gelbgrün",
+		"hex": "9ACD32"
+	}
+]

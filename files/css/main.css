@@ -1,0 +1,312 @@
+@keyframes preloading-dot-animation {
+  0% {
+    background-color: rgba(255, 255, 255, 0.2); }
+  50% {
+    background-color: rgba(255, 255, 255, 0.8); }
+  100% {
+    background-color: rgba(255, 255, 255, 0.2); } }
+@keyframes header-fly-in {
+  100% {
+    transform: translate(0, 0); } }
+@keyframes fade-in-view {
+  100% {
+    opacity: 1; } }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #20242A; }
+  html .logo, body .logo {
+    width: 180px;
+    height: auto;
+    font-weight: 700;
+    font-family: "Helvetica Neue", Arial;
+    font-size: 75px;
+    display: flex;
+    background-color: #41454B; }
+    html .logo div, body .logo div {
+      width: 50%;
+      height: 90px;
+      display: inline-block;
+      vertical-align: middle; }
+      html .logo div:first-child, body .logo div:first-child {
+        text-align: right;
+        color: #A6B470; }
+      html .logo div:last-child, body .logo div:last-child {
+        text-align-last: auto;
+        color: #E4EFAF; }
+  html .view.preloader, body .view.preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1, 1);
+    transition: all 0.5s ease-in-out; }
+    html .view.preloader.fade-out, body .view.preloader.fade-out {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0, 0); }
+    html .view.preloader .progress-animation, body .view.preloader .progress-animation {
+      width: 100%;
+      height: 22px;
+      text-align: center;
+      background-color: #41454B; }
+      html .view.preloader .progress-animation .dot, body .view.preloader .progress-animation .dot {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        animation: preloading-dot-animation 2s ease-in-out 1s infinite; }
+        html .view.preloader .progress-animation .dot:first-child, body .view.preloader .progress-animation .dot:first-child {
+          animation-delay: 0.5s; }
+        html .view.preloader .progress-animation .dot:nth-child(2), body .view.preloader .progress-animation .dot:nth-child(2) {
+          animation-delay: 1s; }
+        html .view.preloader .progress-animation .dot:last-child, body .view.preloader .progress-animation .dot:last-child {
+          animation-delay: 1.5s; }
+  html .view.game-interface, body .view.game-interface {
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    html .view.game-interface.fade-in .header-view, body .view.game-interface.fade-in .header-view {
+      transform: translate(0%, 0%); }
+    html .view.game-interface .game-over-view, body .view.game-interface .game-over-view {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 15;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      pointer-events: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: opacity 0.5s ease-in-out; }
+      html .view.game-interface .game-over-view h1, body .view.game-interface .game-over-view h1 {
+        margin-bottom: 10px;
+        font-family: 'Helvetica Neue';
+        font-weight: 300; }
+      html .view.game-interface .game-over-view.active, body .view.game-interface .game-over-view.active {
+        opacity: 1;
+        pointer-events: all; }
+      html .view.game-interface .game-over-view .wrapper, body .view.game-interface .game-over-view .wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        font-family: 'Helvetica Neue';
+        color: #FFF;
+        padding: 50px;
+        background-color: #41454B;
+        transform: translate(-50%, -50%); }
+        html .view.game-interface .game-over-view .wrapper .content, body .view.game-interface .game-over-view .wrapper .content {
+          font-family: 'Helvetica Neue';
+          font-weight: 100; }
+        html .view.game-interface .game-over-view .wrapper .btn, body .view.game-interface .game-over-view .wrapper .btn {
+          width: 50px;
+          height: 50px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 20px;
+          cursor: pointer;
+          opacity: 0.5;
+          background: url("../assets/reload.svg") center center no-repeat;
+          background-size: contain; }
+          html .view.game-interface .game-over-view .wrapper .btn:hover, body .view.game-interface .game-over-view .wrapper .btn:hover {
+            cursor: pointer;
+            opacity: 1; }
+    html .view.game-interface .header-view, body .view.game-interface .header-view {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      background-color: #41454B;
+      transform: translate(0%, -100%);
+      animation: header-fly-in 1s ease-in-out;
+      animation-fill-mode: forwards; }
+      html .view.game-interface .header-view .logo, body .view.game-interface .header-view .logo {
+        width: 100px;
+        height: 100%;
+        font-size: 40px; }
+        html .view.game-interface .header-view .logo div, body .view.game-interface .header-view .logo div {
+          height: 100%; }
+      html .view.game-interface .header-view .buttons, body .view.game-interface .header-view .buttons {
+        margin-left: auto; }
+        html .view.game-interface .header-view .buttons .btn, body .view.game-interface .header-view .buttons .btn {
+          width: 50px;
+          height: 100%;
+          display: inline-block;
+          cursor: default;
+          opacity: 0.5;
+          background: center center no-repeat;
+          background-size: 70%; }
+          html .view.game-interface .header-view .buttons .btn.disabled, body .view.game-interface .header-view .buttons .btn.disabled {
+            opacity: 0.2;
+            cursor: default; }
+            html .view.game-interface .header-view .buttons .btn.disabled:hover, body .view.game-interface .header-view .buttons .btn.disabled:hover {
+              opacity: 0.2 !important; }
+          html .view.game-interface .header-view .buttons .btn.active, html .view.game-interface .header-view .buttons .btn.active:hover, body .view.game-interface .header-view .buttons .btn.active, body .view.game-interface .header-view .buttons .btn.active:hover {
+            cursor: pointer;
+            opacity: 1; }
+          html .view.game-interface .header-view .buttons .btn.play, body .view.game-interface .header-view .buttons .btn.play {
+            background-image: url("../assets/play.svg"); }
+          html .view.game-interface .header-view .buttons .btn.reload, body .view.game-interface .header-view .buttons .btn.reload {
+            background-image: url("../assets/reload.svg"); }
+    html .view.game-interface .body-view, body .view.game-interface .body-view {
+      width: 100%;
+      height: calc(100% - 50px);
+      display: flex;
+      opacity: 0;
+      animation: fade-in-view 1s ease-in-out 1s;
+      animation-fill-mode: forwards; }
+      html .view.game-interface .body-view .main-view, body .view.game-interface .body-view .main-view {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        html .view.game-interface .body-view .main-view.win .big-tiles-container:before, body .view.game-interface .body-view .main-view.win .big-tiles-container:before {
+          opacity: 1;
+          background: url("../assets/win.svg") rgba(0, 0, 0, 0.5) no-repeat center center; }
+        html .view.game-interface .body-view .main-view.loose .big-tiles-container:before, body .view.game-interface .body-view .main-view.loose .big-tiles-container:before {
+          opacity: 1;
+          background: url("../assets/error.svg") rgba(0, 0, 0, 0.5) no-repeat center center; }
+        html .view.game-interface .body-view .main-view .game-board, body .view.game-interface .body-view .main-view .game-board {
+          font-family: 'Helvetica Neue';
+          font-weight: 100;
+          font-size: 40px;
+          color: #FFF;
+          text-align: center;
+          transition: color 0.5s ease-in-out; }
+          html .view.game-interface .body-view .main-view .game-board .time-board, body .view.game-interface .body-view .main-view .game-board .time-board {
+            color: grey;
+            font-size: 20px; }
+          html .view.game-interface .body-view .main-view .game-board .score-board.negative, body .view.game-interface .body-view .main-view .game-board .score-board.negative {
+            color: #BF1919; }
+          html .view.game-interface .body-view .main-view .game-board .score-board.positive, body .view.game-interface .body-view .main-view .game-board .score-board.positive {
+            color: #FFF; }
+          html .view.game-interface .body-view .main-view .game-board .wrapper, body .view.game-interface .body-view .main-view .game-board .wrapper {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #41454B; }
+            html .view.game-interface .body-view .main-view .game-board .wrapper .label, body .view.game-interface .body-view .main-view .game-board .wrapper .label {
+              color: grey;
+              font-size: 20px; }
+        html .view.game-interface .body-view .main-view .big-tiles-container, body .view.game-interface .body-view .main-view .big-tiles-container {
+          position: relative;
+          width: 80%;
+          height: 50%;
+          margin: 10% auto;
+          margin-top: 5%;
+          margin-bottom: 20px; }
+          html .view.game-interface .body-view .main-view .big-tiles-container:before, body .view.game-interface .body-view .main-view .big-tiles-container:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            content: '';
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease-in-out; }
+          html .view.game-interface .body-view .main-view .big-tiles-container:hover, body .view.game-interface .body-view .main-view .big-tiles-container:hover {
+            transform: none; }
+          html .view.game-interface .body-view .main-view .big-tiles-container.active, body .view.game-interface .body-view .main-view .big-tiles-container.active {
+            border: 2px dashed #CCC; }
+          html .view.game-interface .body-view .main-view .big-tiles-container.hover, body .view.game-interface .body-view .main-view .big-tiles-container.hover {
+            border: 2px dashed #FFF; }
+          html .view.game-interface .body-view .main-view .big-tiles-container .tile:last-child, body .view.game-interface .body-view .main-view .big-tiles-container .tile:last-child {
+            border-left: 1px solid grey; }
+          html .view.game-interface .body-view .main-view .big-tiles-container.disabled .tile:last-child, body .view.game-interface .body-view .main-view .big-tiles-container.disabled .tile:last-child {
+            border-left: none; }
+          html .view.game-interface .body-view .main-view .big-tiles-container.disabled:after, body .view.game-interface .body-view .main-view .big-tiles-container.disabled:after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: '?';
+            font-size: 200px;
+            font-family: "Helvetica Neue", Arial;
+            font-weight: 100;
+            color: #41454B;
+            transform: translate(-50%, -50%); }
+          html .view.game-interface .body-view .main-view .big-tiles-container .tile, body .view.game-interface .body-view .main-view .big-tiles-container .tile {
+            position: relative;
+            transition: background-color 0.5s ease-in-out; }
+            html .view.game-interface .body-view .main-view .big-tiles-container .tile .label, body .view.game-interface .body-view .main-view .big-tiles-container .tile .label {
+              position: absolute;
+              top: 50%;
+              width: 100%;
+              padding: 0 20px;
+              font-size: 35px;
+              font-family: "Helvetica Neue", Arial;
+              font-weight: 100;
+              color: #FFF;
+              text-align: center;
+              display: none;
+              background-color: #41454B;
+              transform: translateY(-50%); }
+            html .view.game-interface .body-view .main-view .big-tiles-container .tile.disabled .label, body .view.game-interface .body-view .main-view .big-tiles-container .tile.disabled .label {
+              display: block; }
+        html .view.game-interface .body-view .main-view .choose-view, body .view.game-interface .body-view .main-view .choose-view {
+          width: 100%;
+          height: 50px;
+          padding: 0 10%;
+          text-align: center; }
+          html .view.game-interface .body-view .main-view .choose-view .choose-btn, body .view.game-interface .body-view .main-view .choose-view .choose-btn {
+            padding: 10px;
+            margin-right: 10px;
+            display: inline-block;
+            cursor: move;
+            color: #FFF;
+            font-size: 20px;
+            font-family: "Helvetica Neue", Arial;
+            font-weight: 100;
+            background-color: #41454B; }
+            html .view.game-interface .body-view .main-view .choose-view .choose-btn:last-child, body .view.game-interface .body-view .main-view .choose-view .choose-btn:last-child {
+              margin-right: 0; }
+            html .view.game-interface .body-view .main-view .choose-view .choose-btn.dragged, body .view.game-interface .body-view .main-view .choose-view .choose-btn.dragged {
+              display: none;
+              cursor: default; }
+      html .view.game-interface .body-view .tiles-container, body .view.game-interface .body-view .tiles-container {
+        display: flex;
+        overflow: hidden;
+        transition: transform 0.5s ease-in-out; }
+        html .view.game-interface .body-view .tiles-container:hover, body .view.game-interface .body-view .tiles-container:hover {
+          transform: scale(1.1, 1.1); }
+        html .view.game-interface .body-view .tiles-container .tile, body .view.game-interface .body-view .tiles-container .tile {
+          width: 50%;
+          height: 100%;
+          border: solid 1px grey;
+          border-radius: 5px 0 0 5px; }
+          html .view.game-interface .body-view .tiles-container .tile:first-child, body .view.game-interface .body-view .tiles-container .tile:first-child {
+            border-right: none; }
+          html .view.game-interface .body-view .tiles-container .tile:last-child, body .view.game-interface .body-view .tiles-container .tile:last-child {
+            border-left: none;
+            border-radius: 0 5px 5px 0; }
+      html .view.game-interface .body-view .tiles-view, body .view.game-interface .body-view .tiles-view {
+        width: calc(100% - 70%);
+        height: 100%;
+        border-left: solid 1px #41454B;
+        overflow: scroll; }
+        html .view.game-interface .body-view .tiles-view .tiles-wrapper, body .view.game-interface .body-view .tiles-view .tiles-wrapper {
+          width: 100%;
+          height: 160px;
+          padding: 40px;
+          padding-bottom: 0;
+          display: block;
+          cursor: not-allowed;
+          -webkit-filter: grayscale(100%); }
+          html .view.game-interface .body-view .tiles-view .tiles-wrapper:first-child, body .view.game-interface .body-view .tiles-view .tiles-wrapper:first-child {
+            -webkit-filter: grayscale(0%); }
+            html .view.game-interface .body-view .tiles-view .tiles-wrapper:first-child .tiles-container, body .view.game-interface .body-view .tiles-view .tiles-wrapper:first-child .tiles-container {
+              cursor: pointer; }
+          html .view.game-interface .body-view .tiles-view .tiles-wrapper:nth-child(2), body .view.game-interface .body-view .tiles-view .tiles-wrapper:nth-child(2) {
+            -webkit-filter: grayscale(50%); }
+          html .view.game-interface .body-view .tiles-view .tiles-wrapper:last-child, body .view.game-interface .body-view .tiles-view .tiles-wrapper:last-child {
+            margin-bottom: 40px; }
